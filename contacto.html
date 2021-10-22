@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="hamburguer-btn">
+            <i class="material-icons">menu</i>
+        </label>
+        <label class="logo">Plantitas S.L</label>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a id="active" href="contacto.html">Contáctanos</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+    <div class="contact-form">
+        <form autocomplete="off">
+            <label for="nombre">Nombre Completo*</label>
+            <input type="text" name="firstname" placeholder="Introduce tu nombre" required>
+
+            <label for="correo">Correo Electrónico*</label>
+            <input type="text" name="lastname" placeholder="Introduce tu correo electrónico" required>
+
+            <label for="telefono">Número De telefono</label>
+            <input type="text" name="telefono" placeholder="Introduce tu numero de teléfono (Opcional)">
+
+            <label for="compañia">Empresa</label>
+            <input type="text" name="compañia" placeholder="Introduce el nombre de tu empresa (Opcional)">
+
+            <label for="subject">Mensaje*</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Introduce tu mensaje" required></textarea>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+
+        </form>
+    </div>
+</body>
+
+</html>
