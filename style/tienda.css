@@ -3,33 +3,39 @@
     grid-template-rows: auto;
     grid-template-columns: auto;
     grid-gap: 20px;
-    grid-template-areas:
-        "area1 area1 area1 area1"
-        "area2 area2 area2 area2"
-        "area3 area3 area3 area3"
-        "area4 area4 area4 area4"
-        "area5 area5 area5 area5";
+    grid-template-areas: "area1 area1 area1 area1" "area2 area2 area2 area2" "area3 area3 area3 area3" "area4 area4 area4 area4" "area5 area5 area5 area5" "area6 area6 area6 area6" "area7 area7 area7 area7" "area8 area8 area8 area8";
 }
 
-.jardineria-title{
+.herramientas-title {
     grid-area: area1;
 }
 
-
-.jardineria {
+.herramientas {
     grid-area: area2;
 }
 
-.plantas {
+.plantas-title {
     grid-area: area3;
 }
 
-.hierbas{
+.plantas {
     grid-area: area4;
 }
 
-.fuentes {
+.decoracion-title {
     grid-area: area5;
+}
+
+.decoracion {
+    grid-area: area6;
+}
+
+.fuentes-title {
+    grid-area: area7;
+}
+
+.fuentes {
+    grid-area: area8;
 }
 
 .tienda-flex {
@@ -42,7 +48,7 @@
     justify-content: center;
 }
 
-.tienda-title{
+.tienda-title {
     display: flex;
     flex-wrap: wrap;
     /*flex-direction: row-reverse;*/
@@ -53,18 +59,18 @@
 }
 
 .tienda-elem {
-    border: 2px solid black;
     width: 200px;
     height: 200px;
     text-align: center;
     margin: 5px;
 }
 
-.tienda-img{
+.tienda-img {
+    padding: 10px 10px 10px 10px;
     width: 160px;
     height: 160px;
 }
 
-.tienda-p{
-    color: white;
+.tienda-p {
+    color: black;
 }
