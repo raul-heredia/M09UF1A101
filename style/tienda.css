@@ -1,0 +1,70 @@
+.tienda {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    grid-template-areas:
+        "area1 area1 area1 area1"
+        "area2 area2 area2 area2"
+        "area3 area3 area3 area3"
+        "area4 area4 area4 area4"
+        "area5 area5 area5 area5";
+}
+
+.jardineria-title{
+    grid-area: area1;
+}
+
+
+.jardineria {
+    grid-area: area2;
+}
+
+.plantas {
+    grid-area: area3;
+}
+
+.hierbas{
+    grid-area: area4;
+}
+
+.fuentes {
+    grid-area: area5;
+}
+
+.tienda-flex {
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: row-reverse;*/
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.tienda-title{
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: row-reverse;*/
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.tienda-elem {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 5px;
+}
+
+.tienda-img{
+    width: 160px;
+    height: 160px;
+}
+
+.tienda-p{
+    color: white;
+}

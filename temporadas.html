@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/temporada.css">
     <!-- Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -20,12 +25,20 @@
         <label class="logo"><img src="img/logo.png"></label>
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="temporadas.html">Temporadas</a></li>
+            <li><a id="active" href="temporadas.html">Temporadas</a></li>
             <li><a href="tienda.html">Tienda</a></li>
-            <li><a id="active" href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
             <li><a href="contacto.html">Contáctanos</a></li>
         </ul>
     </nav>
+    <div id="content">
+        <div class="temporadas">
+            <div class="invierno">1</div>
+            <div class="primavera">2</div>
+            <div class="verano">3</div>
+            <div class="otoño">4</div>
+        </div>
+    </div>
 </body>
 
 </html>

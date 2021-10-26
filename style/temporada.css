@@ -1,0 +1,39 @@
+.temporadas {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "area1 area1 area2 area2"
+        "area1 area1 area2 area2"
+        "area3 area3 area4 area4"
+        "area3 area3 area4 area4";
+}
+
+.invierno {
+    background: blue;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area1;
+}
+
+.primavera {
+    background: red;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area2;
+}
+
+.verano {
+    background: green;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area3;
+}
+
+.otoño {
+    background: yellow;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area4;
+}
