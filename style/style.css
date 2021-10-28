@@ -10,6 +10,30 @@
     font-family: "Poppins", sans-serif;
 }
 
+body#landing{
+    background-image: url("../img/background.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#landing-content{
+    margin: 22px;
+    width: 600px;
+    text-align: justify;
+}
+#landing-content h1{
+    font-family: "Coiny", sans-serif !important;
+}
+
+#landing-button{
+    padding: 10px;
+    background-color: #000000;
+    border-color: #69c8de;
+    color: white;
+}
+
 /*NavBar*/
 
 nav {
@@ -151,5 +175,4 @@ input[type=submit]:hover, input[type=reset]:hover {
     margin: 20px 15%;
     border-radius: 1em;
     background-color: #cecece;
-    padding: 20px;
-}
+    padding: 20px;}
