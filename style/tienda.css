@@ -76,3 +76,7 @@
 .tienda-p {
     color: black;
 }
+
+.tienda-p > b{
+    color: #74bfe1;
+}

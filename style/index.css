@@ -1,0 +1,24 @@
+.home-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.hn-elem {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin: 25px;
+    text-align: justify;
+}
+
+.hn-elem h1{
+    text-align: center;
+}
+.hn-elem hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
