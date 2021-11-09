@@ -105,6 +105,9 @@ nav ul li a#active, nav ul li a:hover {
     margin: 20px auto;
     width: 95%;
 }
+#content > p{
+    text-align: justify;
+}
 
 input[type=text], select, textarea {
     width: 100%;
