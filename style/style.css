@@ -9,6 +9,12 @@
     font-family: "Poppins", sans-serif;
 }
 
+
+p{
+    margin-bottom: 10px;
+}
+
+
 /*NavBar*/
 
 nav {
@@ -18,9 +24,9 @@ nav {
     user-select: none;
 }
 
-label.logo img {
+.logo span {
     width: 200px;
-    margin: -60px 20px;
+    margin: 20px 20px;
 }
 
 nav ul {
@@ -95,11 +101,67 @@ nav ul li a#active, nav ul li a:hover {
     a:hover, a#active {
         background: none !important;
         color: #74bfe1;
+        border-bottom: none !important;
     }
     #check:checked~ul {
         left: 0;
     }
 }
+
+.logo .text {
+color: transparent;
+font-size: 25px;
+display: inline-block;
+border-radius: 3px;
+background-color: #74bfe1;
+position: relative;
+-webkit-background-clip: text;
+background-clip: text;
+}
+.logo .text:before {
+content: attr(data-title);
+background: linear-gradient(90deg, #f58915 0%, #fd1d1d 50%, #74bfe1 100%);
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 0;
+background-clip: text;
+-webkit-background-clip: text;
+transition: all 1s ease-in-out;
+-webkit-animation: text-animation 3s infinite;
+        animation: text-animation 3s infinite;
+}
+
+@-webkit-keyframes text-animation {
+0% {
+    width: 0;
+}
+50% {
+    width: 100%;
+}
+100% {
+    width: 0;
+}
+}
+
+@keyframes text-animation {
+0% {
+    width: 0;
+}
+50% {
+    width: 100%;
+}
+100% {
+    width: 0;
+}
+}
+
+
+
+
+
 
 #content {
     margin: 20px auto;
