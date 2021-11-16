@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/contact.css">
     <!-- Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,27 +31,39 @@
             <li><a id="active" href="contacto.html">Contáctanos</a></li>
         </ul>
     </nav>
-    <div class="contact-form">
-        <form autocomplete="off">
-            <label for="nombre">Nombre Completo*</label>
-            <input type="text" name="firstname" placeholder="Introduce tu nombre" required>
+    <div class="glasscontainer">
+        <div class="contactForm">
+            <form autocomplete="off">
+                <div class="inputGroup inputGroup1">
+                    <input class="inputGroup_textfield" type="text" placeholder="Nombre*" required>
+                </div>
 
-            <label for="correo">Correo Electrónico*</label>
-            <input type="text" name="lastname" placeholder="Introduce tu correo electrónico" required>
+                <div class="inputGroup inputGroup2">
+                    <input class="inputGroup_textfield" type="text" placeholder="Apellido*" required>
+                </div>
 
-            <label for="telefono">Número De telefono</label>
-            <input type="text" name="telefono" placeholder="Introduce tu numero de teléfono (Opcional)">
+                <div class="inputGroup inputGroup3">
+                    <input class="inputGroup_textfield" type="text" placeholder="Correo Electrónico*" required>
+                </div>
 
-            <label for="compañia">Empresa</label>
-            <input type="text" name="compañia" placeholder="Introduce el nombre de tu empresa (Opcional)">
+                <div class="inputGroup inputGroup4">
+                    <input class="inputGroup_textfield" type="text" placeholder="Nº De Teléfono (Opcional)">
+                </div>
 
-            <label for="subject">Mensaje*</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Introduce tu mensaje" required></textarea>
+                <div class="inputGroup inputGroup5">
+                    <input class="inputGroup_textfield" type="text" placeholder="Compañía (Opcional)">
+                </div>
 
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar">
+                <div class="inputGroup inputGroup6">
+                    <textarea class="inputGroup_textfield" name="name" rows="8" placeholder="Escribe aquí tu mensaje*"
+                        required></textarea>
+                </div>
 
-        </form>
+                <div class="inputGroup inputGroup7">
+                    <button type="submit" name="button">Send</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 

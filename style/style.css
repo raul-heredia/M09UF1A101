@@ -89,6 +89,7 @@ nav ul li a#active, nav ul li a:hover {
         left: -100%;
         text-align: center;
         transition: all .7s;
+        z-index: 1;
     }
     nav ul li {
         display: block;
@@ -158,11 +159,6 @@ transition: all 1s ease-in-out;
 }
 }
 
-
-
-
-
-
 #content {
     margin: 20px auto;
     width: 95%;
@@ -170,47 +166,3 @@ transition: all 1s ease-in-out;
 #content > p{
     text-align: justify;
 }
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit], input[type=reset] {
-    background-color: #74bfe1;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 1em;
-    cursor: pointer;
-}
-
-input[type=text]:focus, #mensaje:focus {
-    outline-offset: 0px !important;
-    outline: none !important;
-    border: 2px solid #74bfe1 !important;
-    box-shadow: 0 0 3px #74bfe1 !important;
-    -moz-box-shadow: 0 0 3px #74bfe1 !important;
-    -webkit-box-shadow: 0 0 3px #74bfe1 !important;
-}
-
-#mensaje {
-    height: 200px;
-    resize: none;
-}
-
-input[type=submit]:hover, input[type=reset]:hover {
-    background-color: #74bfe1;
-}
-
-.contact-form {
-    margin: 20px 15%;
-    border-radius: 1em;
-    background-color: #cecece;
-    padding: 20px;}
