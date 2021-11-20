@@ -10,14 +10,14 @@
 }
 
 
-p{
+p {
     margin-bottom: 10px;
 }
 
 
 /*NavBar*/
 
-nav {
+.nav {
     background: #000000;
     height: 80px;
     width: 100%;
@@ -29,18 +29,18 @@ nav {
     margin: 20px 20px;
 }
 
-nav ul {
+.nav ul {
     float: right;
     margin-right: 20px;
 }
 
-nav ul li {
+.nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
 
-nav ul li a {
+.nav ul li a {
     color: white;
     font-size: 17px;
     padding: 8px 10px;
@@ -48,7 +48,7 @@ nav ul li a {
     font-weight: 500;
 }
 
-nav ul li a#active, nav ul li a:hover {
+.nav ul li a#active, .nav ul li a:hover {
     border-bottom: 5px solid #74bfe1;
 }
 
@@ -57,6 +57,7 @@ nav ul li a#active, nav ul li a:hover {
     color: white;
     float: right;
     line-height: 80px;
+    margin-top: 23px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
@@ -71,7 +72,8 @@ nav ul li a#active, nav ul li a:hover {
         font-size: 30px;
         padding-left: 50px;
     }
-    nav ul li a {
+
+    .nav ul li a {
         font-size: 16px;
     }
 }
@@ -80,6 +82,7 @@ nav ul li a#active, nav ul li a:hover {
     .hamburguer-btn {
         display: block;
     }
+
     ul {
         position: fixed;
         width: 100%;
@@ -89,80 +92,139 @@ nav ul li a#active, nav ul li a:hover {
         left: -100%;
         text-align: center;
         transition: all .7s;
-        z-index: 1;
+        z-index: 2;
     }
-    nav ul li {
+
+    .nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav ul li a {
+
+    .nav ul li a {
         font-size: 20px;
     }
+
     a:hover, a#active {
         background: none !important;
         color: #74bfe1;
         border-bottom: none !important;
     }
+
     #check:checked~ul {
         left: 0;
     }
 }
 
-.logo .text {
-color: transparent;
-font-size: 25px;
-display: inline-block;
-border-radius: 3px;
-background-color: #74bfe1;
-position: relative;
--webkit-background-clip: text;
-background-clip: text;
+.nav .logo .text {
+    color: transparent;
+    font-size: 25px;
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #74bfe1;
+    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
-.logo .text:before {
-content: attr(data-title);
-background: linear-gradient(90deg, #f58915 0%, #fd1d1d 50%, #74bfe1 100%);
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-width: 0;
-background-clip: text;
--webkit-background-clip: text;
-transition: all 1s ease-in-out;
--webkit-animation: text-animation 3s infinite;
-        animation: text-animation 3s infinite;
+
+.nav .logo .text:before {
+    content: "Plantitas S.L";
+    background: linear-gradient(90deg, #f58915 0%, #fd1d1d 50%, #74bfe1 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 1s ease-in-out;
+    -webkit-animation: text-animation 3s infinite;
+    animation: text-animation 3s infinite;
 }
 
 @-webkit-keyframes text-animation {
-0% {
-    width: 0;
-}
-50% {
-    width: 100%;
-}
-100% {
-    width: 0;
-}
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
 }
 
 @keyframes text-animation {
-0% {
-    width: 0;
-}
-50% {
-    width: 100%;
-}
-100% {
-    width: 0;
-}
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
 }
 
 #content {
     margin: 20px auto;
     width: 95%;
 }
-#content > p{
+
+#content>p {
     text-align: justify;
+}
+
+.footer {
+    padding: 15px 10px 15px 10px;
+    position: relative;
+    margin-top: 50px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#copyright {
+    padding-top: 15px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.footer-elem {
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    margin: 5px;
+    text-align: justify;
+}
+
+.footer-elem a {
+    color: white;
+}
+
+.footer-elem a:hover {
+    color: #74bfe1;
+}
+
+.footer-elem iframe {
+    width: 300px;
+    height: 300px;
+    border: none;
 }
